@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.header::before { 
+    
+    content: "";
+    background-image: url(Images/banner.png) ;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+
+/*--------- Navigation bar styling---------- */
+
+nav{
+    display: flex;
+    margin: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 160px;
+}
+.navbar{ 
+    display: flex;
+    font-family: sans-serif;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 4px 20px;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+.navbar ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: aliceblue;
+    margin: auto;
+    display: flex;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+
+/* ---------- Home page heading box styling ---------- */
+
+.textbox{
+    width: 100%;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.textbox h1{
+    font-size: 350%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.textbox p{
+    font-size: 100%;
+    padding: 0px 2px;
+    margin: -20px 0px 55px;
+}
+
+
+/*--------- Button styling---------- */
+
+.herobtn{
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 100%;
+    padding: 15px 20px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.herobtn:hover{
+    border: 1px solid tomato;
+    background-color: tomato;
+    transition: 1s;
+}
